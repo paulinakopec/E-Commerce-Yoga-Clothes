@@ -16,7 +16,6 @@ const Wrapper = styled.div`
 const Title = styled.h1`
     font-weight: 300;
     text-align: center;
-    
 `
 
 const Top = styled.div`
@@ -70,7 +69,9 @@ const Details = styled.div`
     justify-content: space-around;
 `
 const ProductName = styled.span``
+
 const ProductId = styled.span``
+
 const ProductColor = styled.div`
     width: 20px;
     height: 20px;
@@ -78,6 +79,7 @@ const ProductColor = styled.div`
     background-color: ${props=>props.color};
 `
 const ProductSize = styled.span``
+
 const PriceDetail = styled.span`
     flex: 1;
     display: flex;
@@ -125,7 +127,9 @@ const SummaryItem = styled.div`
     font-size: ${props=>props.type === "total" && "24px"}
 `
 const SummaryItemText = styled.span``
+
 const SummaryItemPrice = styled.span``
+
 const Button = styled.button`
     width: 100%;
     padding: 10px;
