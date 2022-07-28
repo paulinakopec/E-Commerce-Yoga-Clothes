@@ -39,8 +39,14 @@ const Input = styled.input`
 const Button = styled.button`
     flex: 1;
     border: none;
-    background-color: #545464;
+    background-color: darkolivegreen;
     color: white;
+    cursor: pointer;
+
+    &:hover {
+        background-color: black;
+        transition: 1.5s ease-in-out;
+    }
 `
 
 const Newsletter = () => {
