@@ -31,9 +31,16 @@ const TopButton = styled.button`
     padding: 10px;
     font-weight: 600;
     cursor: pointer;
-    border: ${props=>props.type === "filled" && "none"};
+    border: ${props=>props.type === "filled" && "2px solid black"};
     background-color: ${props=>props.type === "filled" ? "black" : "transparent"};
     color: ${props=>props.type === "filled" && "white"};
+
+    &:hover {
+        background-color: ${props=>props.type === "filled" ? "transparent" : "black"};
+        color: ${props=>props.type === "filled" ? "black" : "white"};
+        border: ${props=>props.type === "filled" ? "2px solid black" : "2px solid black"};
+        transition: 1.5s ease-in-out;
+    }
 `
 
 const TopTexts = styled.div`
@@ -143,8 +150,17 @@ const Button = styled.button`
     width: 100%;
     padding: 10px;
     background-color: black;
-    color: white; 
+    color: white;
+    border: 2px solid black; 
     font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        transition: 1.5s ease-in-out;
+    }
 `
 
 const Cart = () => {
