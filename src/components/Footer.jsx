@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Pinterest, Room, Phone, MailOutline } from '@material-ui/icons';
+import { Facebook, Instagram, Room, Phone, MailOutline, GitHub, LinkedIn } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
 import { mobile } from '../responsive'; 
@@ -34,6 +34,7 @@ const List = styled.ul`
 const ListItem = styled.li`
     width: 50%;
     margin-bottom: 5px;
+    cursor: pointer;
 `
 
 const Right = styled.div`
@@ -57,8 +58,8 @@ const SocialIcon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${props=>props.color};
     margin-right: 10px;
+    cursor: pointer;
 `
 
 const ContactItem = styled.div`
@@ -74,17 +75,17 @@ const Footer = () => {
             <Logo>NOFOMO.</Logo>
             <Description>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sit iusto numquam natus architecto in, libero adipisci autem ea nobis inventore optio accusamus, repellat hic voluptate harum aliquam quae sed?</Description>
             <SocialContainer>
-                <SocialIcon color="cornflowerblue">
-                    <Facebook></Facebook>
+                <SocialIcon>
+                    <a href="https://github.com/paulinakopec" target="_blank" rel="noreferrer"><GitHub></GitHub></a>
                 </SocialIcon>
-                <SocialIcon color="hotpink">
-                    <Instagram></Instagram>
+                <SocialIcon>
+                    <a href="https://www.linkedin.com/in/paulina-kope%C4%87-b11365183/" target="_blank" rel="noreferrer"><LinkedIn></LinkedIn></a>
                 </SocialIcon>
-                <SocialIcon color="cornflowerblue">
-                    <Twitter></Twitter>
+                <SocialIcon>
+                    <a href="https://www.facebook.com/paulinamariakopec/" target="_blank" rel="noreferrer"><Facebook></Facebook></a>
                 </SocialIcon>
-                <SocialIcon color="orangered">
-                    <Pinterest></Pinterest>
+                <SocialIcon>
+                    <a href="https://www.instagram.com/paulinamkopec/" target="_blank" rel="noreferrer" backgroundColor="black"><Instagram></Instagram></a>
                 </SocialIcon>
             </SocialContainer>
         </Left>
@@ -93,9 +94,9 @@ const Footer = () => {
             <List>
                 <ListItem>Home</ListItem>
                 <ListItem>Cart</ListItem>
-                <ListItem>Woman Fashion</ListItem>
-                <ListItem>Man Fashion</ListItem>
-                <ListItem>Accessories</ListItem>
+                <ListItem>Featured Products</ListItem>
+                <ListItem>Women</ListItem>
+                <ListItem>Men</ListItem>
                 <ListItem>Sale</ListItem>
                 <ListItem>My Account</ListItem>
                 <ListItem>Order Tracking</ListItem>
@@ -109,10 +110,10 @@ const Footer = () => {
                 Marszalkowska Street 107/12, 02-100 Warsaw
             </ContactItem>
             <ContactItem><Phone style={{marginRight:"10px"}}/>
-                +48 123 456 789
+                +48 518 602 797
             </ContactItem>
             <ContactItem><MailOutline style={{marginRight:"10px"}}/>
-                contact@nofomo.dev
+                paulinakopec32@gmail.com
             </ContactItem>
         </Right>
     </Container>
