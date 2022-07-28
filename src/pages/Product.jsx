@@ -107,13 +107,15 @@ const Amount = styled.span`
 const Button = styled.button`
     padding: 15px;
     border: 2px solid black;
-    background-color: white;
+    background-color: transparent;
+    color: black;
     cursor: pointer;
     font-weight: 500;
     
     &:hover{
-        background-color: ghostwhite;
-        transition: 0.5s ease-in-out;
+        background-color: black;
+        color: white;
+        transition: 1.5s ease-in-out;
     }
     `
 
@@ -148,7 +150,7 @@ const Product = () => {
                     </Filter>
                     <Filter>
                         <FilterTitle>Size</FilterTitle>
-                        <FilterSize>
+                        <FilterSize style={{cursor: "pointer"}}>
                             <FilterSizeOption>XS</FilterSizeOption>
                             <FilterSizeOption>S</FilterSizeOption>
                             <FilterSizeOption>M</FilterSizeOption>
@@ -159,9 +161,9 @@ const Product = () => {
                 </FilterContainer>
                 <AddContainer>
                     <AmountContainer>
-                        <Remove></Remove>
+                        <Remove style={{cursor: "pointer"}}></Remove>
                         <Amount>1</Amount>
-                        <Add></Add>
+                        <Add style={{cursor: "pointer"}}></Add>
                     </AmountContainer>
                     <Button>Add to cart</Button>
                 </AddContainer>
