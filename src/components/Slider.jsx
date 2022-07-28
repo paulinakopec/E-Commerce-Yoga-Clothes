@@ -64,6 +64,12 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: 1.5s ease-in-out;
+    }
 `
 
 const Arrow = styled.div`
