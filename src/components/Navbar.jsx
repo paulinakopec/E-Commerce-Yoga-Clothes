@@ -33,7 +33,7 @@ const Language = styled.span`
 `;
 
 const SearchContainer = styled.div`
-    border: 0.5px solid lightgray;
+    border: 0.5px solid black;
     display: flex;
     align-items: center;
     margin-left: 25px;
@@ -78,8 +78,8 @@ const Navbar = () => {
             <Left>
                 <Language>PL</Language>
                 <SearchContainer>
-                    <Input placeholder="search"></Input>
-                    <Search style={{color: 'gray', fontSize: 16}}></Search>
+                    <Input placeholder="search..."></Input>
+                    <Search style={{color: 'black', fontSize: 16}}></Search>
                 </SearchContainer>
             </Left>
             <Center><Logo><Link to="/" className="link">NOFOMO.</Link></Logo></Center>
