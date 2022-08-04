@@ -65,6 +65,7 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+    border: 1px solid black;
 
     &:hover {
         background-color: black;
