@@ -1,7 +1,8 @@
 import { Facebook, Instagram, Room, Phone, MailOutline, GitHub, LinkedIn } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
-import { mobile } from '../responsive'; 
+import { mobile } from '../responsive';
+import { Link } from 'react-router-dom'; 
 
 const Container = styled.div`
     display: flex;
@@ -92,11 +93,11 @@ const Footer = () => {
         <Center>
             <Title>Useful Links</Title>
             <List>
-                <ListItem>Home</ListItem>
-                <ListItem>Cart</ListItem>
-                <ListItem>Featured Products</ListItem>
+                <ListItem><Link to='/' className='link'>Home</Link></ListItem>
+                <ListItem><Link to='/cart' className='link'>Cart</Link></ListItem>
+                <ListItem><Link to='/productlist' className='link'>Featured Products</Link></ListItem>
                 <ListItem>Women</ListItem>
-                <ListItem>Men</ListItem>
+                <ListItem><Link to='/productlist' className='link'>Tops</Link></ListItem>
                 <ListItem>Sale</ListItem>
                 <ListItem>My Account</ListItem>
                 <ListItem>Order Tracking</ListItem>
