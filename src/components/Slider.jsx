@@ -39,6 +39,7 @@ const Image = styled.img`
     width: 100vw;
     height: calc(100vh - 90px);
     object-fit: cover;
+    opacity: 80%;
 `
 
 const InfoContainer = styled.div`
