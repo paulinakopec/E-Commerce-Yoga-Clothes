@@ -33,13 +33,6 @@ export const sliderItems = [
         desc: 'LIMITED EDITION',
         color: 'darkblue',
     },
-    {
-        id: 4,
-        img: 'https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2016%2F06%2Fhm-sports-performance-collection-1.jpeg?q=75&w=800&cbr=1&fit=max',
-        title: 'MEN',
-        desc: 'LIMITED EDITION',
-        color: 'black',
-    },
 ]
 
 export const categories = [
