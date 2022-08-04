@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: calc(100vh - 90px);
     display: flex;
     position: relative;
     overflow: hidden;
@@ -17,7 +17,6 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-    height: 100%;
     display: flex;
     transition: all 1.5s ease;
     transform: translateX(${(props) => props.slideIndex * -100}vw);
@@ -25,20 +24,21 @@ const Wrapper = styled.div`
 
 const Slide = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 90px);
     display: flex;
     align-items: center;
     position: relative;
 `
 
 const ImgContainer = styled.div`
-    width: 100%;
+    width: 100vw;
+    height: calc(100vh - 90px);
 `
 
 const Image = styled.img`
-    width: 100%;
+    width: 100vw;
+    height: calc(100vh - 90px);
     object-fit: cover;
-    // opacity: 80%; 
 `
 
 const InfoContainer = styled.div`
@@ -64,8 +64,10 @@ const Button = styled.button`
     padding: 10px;
     font-size: 20px;
     background-color: transparent;
+    color: black;
+    font-weight: 600;
     cursor: pointer;
-    border: 1px solid black;
+    border: 2px solid black;
 
     &:hover {
         background-color: black;
