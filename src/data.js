@@ -15,23 +15,23 @@ export const sliderItems = [
     {
         id: 1,
         img: 'https://cdn.rt.emap.com/wp-content/uploads/sites/2/2018/01/23123815/eco-hm-1.jpg',
-        title: 'LIFE BALANCE',
+        title: 'ICELAND',
         desc: 'LIMITED EDITION',
         color: 'black',
     },
     {
         id: 2,
         img: 'https://www.fashiongonerogue.com/wp-content/uploads/2016/06/HM-Every-Victory-2016-Collection01.jpg',
-        title: 'CITY VIBES',
+        title: 'TOKYO',
         desc: 'LIMITED EDITION',
-        color: 'lightpink',
+        color: '#45464a',
     },
     {
         id: 3,
         img: 'https://www.fashiongonerogue.com/wp-content/uploads/2015/07/HM-Sport-Fall-2015-Women05.jpg',
-        title: 'HARD TRAINING',
+        title: 'NEW YORK',
         desc: 'LIMITED EDITION',
-        color: 'darkblue',
+        color: '#202124',
     },
 ]
 
