@@ -83,9 +83,6 @@ const Footer = () => {
                     <a href="https://www.linkedin.com/in/paulina-kope%C4%87-b11365183/" target="_blank" rel="noreferrer"><LinkedIn></LinkedIn></a>
                 </SocialIcon>
                 <SocialIcon>
-                    <a href="https://www.facebook.com/paulinamariakopec/" target="_blank" rel="noreferrer"><Facebook></Facebook></a>
-                </SocialIcon>
-                <SocialIcon>
                     <a href="https://www.instagram.com/paulinamkopec/" target="_blank" rel="noreferrer" backgroundColor="black"><Instagram></Instagram></a>
                 </SocialIcon>
             </SocialContainer>
