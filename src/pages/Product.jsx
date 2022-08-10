@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import pp1 from '../img/pp1.jpeg';
 import { Add, Remove } from '@material-ui/icons';
 import { mobile } from '../responsive';
+import { useState } from 'react';
 
 const Container = styled.div`
 `
@@ -120,6 +121,16 @@ const Button = styled.button`
     `
 
 const Product = () => {
+  const [value, setValue] = useState(1);
+
+  const decreaseAmount = () => {
+    if (value <= 1) {
+        setValue(1);
+    } else {
+        setValue(value-1);
+    }
+  }
+
   return (
     <Container>
         <Navbar></Navbar>
@@ -161,9 +172,9 @@ const Product = () => {
                 </FilterContainer>
                 <AddContainer>
                     <AmountContainer>
-                        <Remove style={{cursor: "pointer"}}></Remove>
-                        <Amount>1</Amount>
-                        <Add style={{cursor: "pointer"}}></Add>
+                        <Remove style={{cursor: "pointer"}} onClick={decreaseAmount}></Remove>
+                        <Amount>{value}</Amount>
+                        <Add style={{cursor: "pointer"}} onClick={()=>setValue(value+1)}></Add>
                     </AmountContainer>
                     <Button>Add to cart</Button>
                 </AddContainer>
