@@ -7,6 +7,7 @@ import BaliShorts from '../img/Bali_shorts.jpeg';
 import SaharaLeggings from '../img/pp2.jpeg';
 import { Add, Remove } from '@material-ui/icons';
 import { mobile } from '../responsive';
+import { Link } from 'react-router-dom';
 
 const Container = styled.div``
 
@@ -173,7 +174,7 @@ const Cart = () => {
                 YOUR CART
             </Title>
             <Top>
-                <TopButton>CONTINUE SHOPPING</TopButton>
+                <TopButton><Link to="/" className="link">CONTINUE SHOPPING</Link></TopButton>
                 <TopTexts>
                     <TopText>Shopping Bag(2)</TopText>
                     <TopText>Your Wishlist(0)</TopText>
